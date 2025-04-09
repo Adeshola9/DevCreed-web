@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Login and Registration |Dev Creed site </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reg-style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <div class="navigation">
+            <input type="checkbox"  id="navi-toggle" class="navigation__checkbox">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">
+                    &nbsp;
+                </span>
+            </label>
+    
+            <div class="navigation__background"></div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="About.html" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="Service.html" class="navigation__link">Service</a></li>
+                    <li class="navigation__item"><a href="Contact.html" class="navigation__link">Contact</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Course</a></li>
+                </ul>
+            </nav>
+        
+        </div>
+   </head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="fonts/undraw_personal_information_re_vw8a.png" alt="">
+        <div class="text">
+          <span class="text-1">Every new friend is a <br> new adventure</span>
+          <span class="text-2">Let's get connected</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="fonts/hello.png" alt="">
+        <div class="text">
+          <span class="text-1">Complete miles of journey <br> with one step</span>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+    <form action="#">
+      <div class="form-content">
+        <div class="login-form">
+          <div class="title">Login</div>
+          <div class="input-boxes">
+            <div class="input-box">
+              <i class="fas fa-envelope"></i>
+              <input type="text" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Enter your password" required>
+            </div>
+            <div class="text"><a href="#">Forgot password?</a></div>
+            <div class="button input-box">
+              <input type="submit" value="Sumbit">
+            </div>
+            <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+          </div>
+        </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+          <div class="input-boxes">
+            <div class="input-box">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <i class="fas fa-envelope"></i>
+              <input type="text" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Enter your password" required>
+            </div>
+            <div class="button input-box">
+              <input type="submit" value="Sumbit">
+            </div>
+            <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

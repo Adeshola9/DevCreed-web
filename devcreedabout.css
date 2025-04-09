@@ -1,0 +1,69 @@
+/*media Query
+    0   - 600px:        phone
+    600 - 900px:        Tablet portrait
+    900 - 1200px:       Tablet landscape
+
+    [1200 - 1800] is where our normal styles apply
+
+    1800px +  :          big desktop
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 90.25rem) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 90.25rem) {
+    body {
+      padding: 0; } }
+
+
+
+.section-features {
+  margin-top: -14vh;
+  padding: 25rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("fonts/team.png");
+  background-size: cover;
+  transform: skewY(-7deg); }
+  .section-features > * {
+    transform: skewY(7deg); }
+  @media (max-width: 90.25rem) {
+    .section-features {
+      padding: 10rem 0; } }
+
+
+.header {
+  height: 55vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(./fonts/adam\ 2.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 2rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
+    text-align: center; }
